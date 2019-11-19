@@ -25,7 +25,7 @@ export const ROUTES_CLIENTS: RouteInfo[] = [
   { path: '/maps', title: 'Maps',  icon:'location_on', class: '' },
 ];
 
-@Component({
+@Component({ 
   selector: 'app-sidebar',
   templateUrl: './sidebar.component.html',
   styleUrls: ['./sidebar.component.css']
@@ -35,7 +35,8 @@ export class SidebarComponent implements OnInit {
   shared: SharedService;
   menuItems: any[];
 
-  constructor() { 
+  constructor(
+  ) { 
     this.shared = SharedService.getInstance()
   }
 

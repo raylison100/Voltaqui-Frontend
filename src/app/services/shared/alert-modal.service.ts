@@ -12,7 +12,7 @@ enum AlertTypes {
 @Injectable({
   providedIn: 'root'
 })
-export class AlertModalService {
+export class AlertModalService { 
 
   constructor(
     private modalService: BsModalService,

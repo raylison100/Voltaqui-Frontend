@@ -9,6 +9,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
 import { NavbarComponent } from '../../components/navbar/navbar.component';
 import { SidebarComponent } from '../../components/sidebar/sidebar.component';
 import { AdminLayoutComponent } from '../../components/layouts/admin-layout/admin-layout.component';
+
 import {
   MatButtonModule,
   MatInputModule,
@@ -17,6 +18,7 @@ import {
   MatTooltipModule,
   MatSelectModule
 } from '@angular/material';
+import { ConsultoriaComponent } from 'app/components/consultoria/consultoria.component';
 
 
 @NgModule({
@@ -40,7 +42,7 @@ import {
     UserProfileComponent,
     AdminLayoutComponent,
     MapsComponent,
-
+    ConsultoriaComponent,
   ]
 })
 

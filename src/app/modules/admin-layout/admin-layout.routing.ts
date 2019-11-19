@@ -6,6 +6,7 @@ import { DashboardComponent } from '../../components/dashboard/dashboard.compone
 import { UserProfileComponent } from '../../components/user-profile/user-profile.component';
 import { AdminLayoutComponent } from '../../components/layouts/admin-layout/admin-layout.component';
 import { MapsComponent } from '../../components/maps/maps.component'
+import { ConsultoriaComponent } from 'app/components/consultoria/consultoria.component';
 
 export const AdminLayoutRoutes: Routes = [
     {
@@ -26,6 +27,10 @@ export const AdminLayoutRoutes: Routes = [
     { 
         path: 'user-profile',   
         component: UserProfileComponent 
+    },
+    { 
+        path: 'consultoria',   
+        component: ConsultoriaComponent 
     },
 ];
 

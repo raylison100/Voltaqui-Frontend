@@ -1,0 +1,90 @@
+<div class="main-content">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-8">
+        <div class="card">
+          <div class="card-header card-header-danger">
+            <h4 class="card-title">Solicitação de Consultoria</h4>
+          </div>
+          <div class="card-body">
+            <form>
+              <div class="row">
+                <div class="col-md-12">
+                  <h4 class="card-title">Em qual ou quais dos seguintes aspectos o seu estabelecimento precisa de ajuda
+                    para consultoria?</h4>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-5">
+                  <mat-form-field class="example-full-width">
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" value="">
+                        Baixa Qualidade no Atendimento
+                        <span class="form-check-sign">
+                          <span class="check"></span>
+                        </span>
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" value="">
+                        Baixa Qualidade na Comida
+                        <span class="form-check-sign">
+                          <span class="check"></span>
+                        </span>
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" value="">
+                        Baixa Qualidade no Ambiente
+                        <span class="form-check-sign">
+                          <span class="check"></span>
+                        </span>
+                      </label>
+                    </div>
+                  </mat-form-field>
+
+
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <label>Observações</label>
+                  <mat-form-field class="example-full-width">
+                    <textarea matInput placeholder="Descreva detalhadamente seu problema"></textarea>
+                  </mat-form-field>
+                </div>
+              </div>
+              <button mat-raised-button [routerLink]="['/dashboard']"
+                class="btn btn-outline-danger btn-dark pull-right">Voltar</button>
+              <button mat-raised-button (click)="solicitarConsultoria()"
+                class="btn btn-danger pull-right">Solicitar</button>
+              <div class="clearfix"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card card-profile">
+          <div class="card-avatar">
+            <a href="javascript:void(0)">
+              <img class="img" src="./assets/img/voltaqui.png" />
+            </a>
+          </div>
+          <div class="card-body">
+            <p class="card-description">
+              “Ser um empreendedor é executar os sonhos, mesmo que haja riscos. É enfrentar os problemas, mesmo não
+              tendo forças. É caminhar por lugares desconhecidos, mesmo sem bússola. É tomar atitudes que ninguém tomou.
+              É ter consciência de que quem vence sem obstáculos triunfa sem glória.”
+            </p>
+            <p class="card-description">
+                Augusto Cury
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
