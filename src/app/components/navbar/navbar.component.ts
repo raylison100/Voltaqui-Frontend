@@ -1,7 +1,9 @@
 import { Component, OnInit, ElementRef } from '@angular/core';
-import { ROUTES } from '../sidebar/sidebar.component';
+import { ROUTES_RESTAURANTS } from '../sidebar/sidebar.component';
+import { ROUTES_CLIENTS } from '../sidebar/sidebar.component';
 import {Location, LocationStrategy, PathLocationStrategy} from '@angular/common';
 import { Router } from '@angular/router';
+import { SharedService } from '../../services/shared/shared.service';
 
 @Component({
   selector: 'app-navbar',
@@ -9,6 +11,8 @@ import { Router } from '@angular/router';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
+
+    shared: SharedService;
     private listTitles: any[];
     location: Location;
       mobile_menu_visible: any = 0;
@@ -16,12 +20,20 @@ export class NavbarComponent implements OnInit {
     private sidebarVisible: boolean;
 
     constructor(location: Location,  private element: ElementRef, private router: Router) {
+        this.shared = SharedService.getInstance()
         this.location = location;
         this.sidebarVisible = false;
     }
 
     ngOnInit(){
-      this.listTitles = ROUTES.filter(listTitle => listTitle);
+
+        if (this.shared.showTemplateUser){
+            this.listTitles = ROUTES_RESTAURANTS.filter(listTitle => listTitle);
+        } else {
+            this.listTitles = ROUTES_CLIENTS.filter(listTitle => listTitle);
+        }
+
+      
       const navbar: HTMLElement = this.element.nativeElement;
       this.toggleButton = navbar.getElementsByClassName('navbar-toggler')[0];
       this.router.events.subscribe((event) => {
