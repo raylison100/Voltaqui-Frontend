@@ -24,13 +24,22 @@ export const AdminLayoutRoutes: Routes = [
             component: MapsComponent
         }]
     },
-    { 
-        path: 'user-profile',   
-        component: UserProfileComponent 
+    {
+        path: 'user-profile',
+        component: AdminLayoutComponent,
+        children: [{
+            path: '',
+            component: UserProfileComponent
+        }]
     },
-    { 
-        path: 'consultoria',   
-        component: ConsultoriaComponent 
+    {
+        path: 'consultoria',
+        component: AdminLayoutComponent,
+        children: [{
+            path: '',
+            component: ConsultoriaComponent
+        }]
+
     },
 ];
 
