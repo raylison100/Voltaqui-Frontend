@@ -21,8 +21,8 @@ export const ROUTES_RESTAURANTS: RouteInfo[] = [
 ];
 
 export const ROUTES_CLIENTS: RouteInfo[] = [
-  { path: '/preferencias', title: 'Preferencias',  icon: 'dashboard', class: '' },
   { path: '/maps', title: 'Maps',  icon:'location_on', class: '' },
+  { path: '/preferencias', title: 'Preferencias',  icon: 'dashboard', class: '' }
 ];
 
 @Component({ 
