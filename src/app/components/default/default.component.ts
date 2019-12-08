@@ -37,7 +37,7 @@ export class DefaultComponent implements OnInit {
     this.alertModalService.showAlertDanger('SEJA BEM VINDO AO VOLTAQUI',1600);
     this.shared.showTemplateUser = false;
     this.loading = false;
-    this.router.navigate(['maps'])    
+    this.router.navigate(['dashboard-cliente'])    
   }
 
 }

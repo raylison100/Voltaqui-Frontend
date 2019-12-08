@@ -19,6 +19,8 @@ import {
   MatSelectModule
 } from '@angular/material';
 import { ConsultoriaComponent } from 'app/components/consultoria/consultoria.component';
+import { AvaliarRestauranteComponent } from 'app/components/avaliar-restaurante/avaliar-restaurante.component';
+import { DashboardClienteComponent } from 'app/components/dashboard-cliente/dashboard-cliente.component';
 
 
 @NgModule({
@@ -43,6 +45,8 @@ import { ConsultoriaComponent } from 'app/components/consultoria/consultoria.com
     AdminLayoutComponent,
     MapsComponent,
     ConsultoriaComponent,
+    DashboardClienteComponent,
+    AvaliarRestauranteComponent,
   ]
 })
 

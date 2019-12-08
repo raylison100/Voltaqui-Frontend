@@ -14,6 +14,7 @@ import { SharedModule } from './modules/shared/shared.module';
 import { SharedService } from './services/shared/shared.service';
 import { ModalModule } from 'ngx-bootstrap/modal';
 
+
 @NgModule({
   imports: [
     ModalModule.forRoot(),

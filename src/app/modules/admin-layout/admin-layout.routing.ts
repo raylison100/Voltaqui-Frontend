@@ -7,6 +7,8 @@ import { UserProfileComponent } from '../../components/user-profile/user-profile
 import { AdminLayoutComponent } from '../../components/layouts/admin-layout/admin-layout.component';
 import { MapsComponent } from '../../components/maps/maps.component'
 import { ConsultoriaComponent } from 'app/components/consultoria/consultoria.component';
+import { DashboardClienteComponent } from 'app/components/dashboard-cliente/dashboard-cliente.component';
+import { AvaliarRestauranteComponent } from 'app/components/avaliar-restaurante/avaliar-restaurante.component';
 
 export const AdminLayoutRoutes: Routes = [
     {
@@ -38,6 +40,24 @@ export const AdminLayoutRoutes: Routes = [
         children: [{
             path: '',
             component: ConsultoriaComponent
+        }]
+
+    },
+    {
+        path: 'dashboard-cliente',
+        component: AdminLayoutComponent,
+        children: [{
+            path: '',
+            component: DashboardClienteComponent
+        }]
+
+    },
+    {
+        path: 'avaliar-restaurante',
+        component: AdminLayoutComponent,
+        children: [{
+            path: '',
+            component: AvaliarRestauranteComponent
         }]
 
     },
